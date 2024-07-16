@@ -1,0 +1,450 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"10 E:\projects\Electronic rosary\ECU_layer/7_segment/ecu_seven_segment.c
+[e E2874 . `uc
+SEGMENT_COMMON_ANODE 0
+SEGMENT_COMMON_CATHODE 1
+]
+"38
+[e E2814 . `uc
+LOW 0
+HIGH 1
+]
+"16 E:\projects\Electronic rosary\ECU_layer/BUTTOM/ecu_button.c
+[e E2874 . `uc
+BUTTON_PRESSED 0
+BUTTON_RELEASED 1
+]
+[e E2878 . `uc
+BUTTON_ACTIVE_HIGH 0
+BUTTON_ACTIVE_LOW 1
+]
+"38
+[e E2814 . `uc
+LOW 0
+HIGH 1
+]
+"22 E:\projects\Electronic rosary\ECU_layer/LED/ecu_led.c
+[e E2818 . `uc
+OUTPUT 0
+INPUT 1
+]
+"53
+[e E2814 . `uc
+LOW 0
+HIGH 1
+]
+"37 E:\projects\Electronic rosary\MCAL_Layer/GPIO/HAL_gpio.c
+[e E2818 . `uc
+OUTPUT 0
+INPUT 1
+]
+"69
+[e E2814 . `uc
+LOW 0
+HIGH 1
+]
+"153
+[e E2832 . `uc
+PORTA_INDEX 0
+PORTB_INDEX 1
+PORTC_INDEX 2
+PORTD_INDEX 3
+PORTE_INDEX 4
+]
+"9 E:\projects\Electronic rosary\applicatin.c
+[e E2832 . `uc
+PORTA_INDEX 0
+PORTB_INDEX 1
+PORTC_INDEX 2
+PORTD_INDEX 3
+PORTE_INDEX 4
+]
+[e E2822 . `uc
+PIN0 0
+PIN1 1
+PIN2 2
+PIN3 3
+PIN4 4
+PIN5 5
+PIN6 6
+PIN7 7
+]
+[e E2818 . `uc
+OUTPUT 0
+INPUT 1
+]
+[e E2814 . `uc
+LOW 0
+HIGH 1
+]
+"34
+[e E2909 . `uc
+SEGMENT_COMMON_ANODE 0
+SEGMENT_COMMON_CATHODE 1
+]
+"54
+[e E2891 . `uc
+BUTTON_PRESSED 0
+BUTTON_RELEASED 1
+]
+[e E2895 . `uc
+BUTTON_ACTIVE_HIGH 0
+BUTTON_ACTIVE_LOW 1
+]
+"81
+[e E2874 . `uc
+LED_OFF 0
+LED_ON 1
+]
+"98
+[v _main main `(i  1 e 2 0 ]
+"168
+[v _application_intailize application_intailize `(v  1 e 1 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 E:\projects\Electronic rosary\ECU_layer/7_segment/ecu_seven_segment.c
+[v _seven_segment_intailize seven_segment_intailize `(uc  1 e 1 0 ]
+"31
+[v _seven_segment_write_number seven_segment_write_number `(uc  1 e 1 0 ]
+"16 E:\projects\Electronic rosary\ECU_layer/BUTTOM/ecu_button.c
+[v _button_initialize button_initialize `(uc  1 e 1 0 ]
+"36
+[v _button_read button_read `(uc  1 e 1 0 ]
+"15 E:\projects\Electronic rosary\ECU_layer/LED/ecu_led.c
+[v _LED_intailize LED_intailize `(uc  1 e 1 0 ]
+"41
+[v _LED_TURN_ON LED_TURN_ON `(uc  1 e 1 0 ]
+"66
+[v _LED_TURN_OFF LED_TURN_OFF `(uc  1 e 1 0 ]
+"22 E:\projects\Electronic rosary\MCAL_Layer/GPIO/HAL_gpio.c
+[v _gpio_pin_direction_intailize gpio_pin_direction_intailize `(uc  1 e 1 0 ]
+"69
+[v _gpio_pin_write_logic gpio_pin_write_logic `(uc  1 e 1 0 ]
+"100
+[v _gpio_pin_read_logic gpio_pin_read_logic `(uc  1 e 1 0 ]
+"119
+[v _gpio_pin_toggle_logic gpio_pin_toggle_logic `(uc  1 e 1 0 ]
+"133
+[v _gpio_pin_intailize gpio_pin_intailize `(uc  1 e 1 0 ]
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"9 E:\projects\Electronic rosary\applicatin.c
+[v _seg_en_1 seg_en_1 `S24  1 e 1 0 ]
+"15
+[v _seg_en_2 seg_en_2 `S24  1 e 1 0 ]
+"21
+[v _seg_en_3 seg_en_3 `S24  1 e 1 0 ]
+"27
+[v _seg_en_4 seg_en_4 `S24  1 e 1 0 ]
+"34
+[s S32 . 5 `[4]S24 1 segment_pins 4 0 `E2874 1 segment_type 1 4 ]
+[v _segment_1 segment_1 `S32  1 e 5 0 ]
+"54
+[s S72 . 3 `S24 1 BUTTON_PIN 1 0 `E2874 1 BUTTON_STATUS 1 1 `E2878 1 BUTTON_ACTIVE 1 2 ]
+[v _btn_count btn_count `S72  1 e 3 0 ]
+"63
+[v _btn_reset btn_reset `S72  1 e 3 0 ]
+"72
+[v _btn_led btn_led `S72  1 e 3 0 ]
+[s S112 . 1 `uc 1 PORT_NAME 1 0 :4:0 
+`uc 1 PIN 1 0 :3:4 
+`uc 1 LED_ST 1 0 :1:7 
+]
+"81
+[v _led led `S112  1 e 1 0 ]
+"89
+[v _number number `us  1 e 2 0 ]
+"90
+[v _VAR VAR `uc  1 e 1 0 ]
+"94
+[v _btn_count_st btn_count_st `E2891  1 e 1 0 ]
+"95
+[v _btn_reset_st btn_reset_st `E2891  1 e 1 0 ]
+"96
+[v _btn_led_st btn_led_st `E2891  1 e 1 0 ]
+"52 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18Fxxxx_DFP/1.6.159/xc8\pic\include\proc\pic18f4620.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"189
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"360
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"535
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"677
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+"880
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+"992
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"1104
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"1216
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"1328
+[v _LATE LATE `VEuc  1 e 1 @3981 ]
+"1380
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1602
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1824
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+"2046
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"2268
+[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
+"12 E:\projects\Electronic rosary\MCAL_Layer/GPIO/HAL_gpio.c
+[v _tris_regesters tris_regesters `[5]*.39VEuc  1 e 10 0 ]
+"13
+[v _lat_regesters lat_regesters `[5]*.39VEuc  1 e 10 0 ]
+"14
+[v _port_regesters port_regesters `[5]*.39VEuc  1 e 10 0 ]
+"98 E:\projects\Electronic rosary\applicatin.c
+[v _main main `(i  1 e 2 0 ]
+{
+"166
+} 0
+"31 E:\projects\Electronic rosary\ECU_layer/7_segment/ecu_seven_segment.c
+[v _seven_segment_write_number seven_segment_write_number `(uc  1 e 1 0 ]
+{
+"32
+[v seven_segment_write_number@ret ret `uc  1 a 1 14 ]
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"31
+[s S32 . 5 `[4]S24 1 segment_pins 4 0 `E2874 1 segment_type 1 4 ]
+[v seven_segment_write_number@segment segment `*.30CS32  1 p 1 12 ]
+[v seven_segment_write_number@number number `uc  1 p 1 13 ]
+"49
+} 0
+"36 E:\projects\Electronic rosary\ECU_layer/BUTTOM/ecu_button.c
+[v _button_read button_read `(uc  1 e 1 0 ]
+{
+"38
+[v button_read@pin_logic_status pin_logic_status `E2814  1 a 1 10 ]
+"37
+[v button_read@ret ret `uc  1 a 1 9 ]
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"36
+[s S72 . 3 `S24 1 BUTTON_PIN 1 0 `E2874 1 BUTTON_STATUS 1 1 `E2878 1 BUTTON_ACTIVE 1 2 ]
+[v button_read@btn btn `*.30CS72  1 p 1 6 ]
+[v button_read@btn_st btn_st `*.30E2874  1 p 1 7 ]
+"67
+} 0
+"100 E:\projects\Electronic rosary\MCAL_Layer/GPIO/HAL_gpio.c
+[v _gpio_pin_read_logic gpio_pin_read_logic `(uc  1 e 1 0 ]
+{
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+[v gpio_pin_read_logic@pin_config pin_config `*.30CS24  1 p 1 0 ]
+[v gpio_pin_read_logic@logic logic `*.30E2814  1 p 1 1 ]
+"109
+} 0
+"168 E:\projects\Electronic rosary\applicatin.c
+[v _application_intailize application_intailize `(v  1 e 1 0 ]
+{
+"185
+} 0
+"10 E:\projects\Electronic rosary\ECU_layer/7_segment/ecu_seven_segment.c
+[v _seven_segment_intailize seven_segment_intailize `(uc  1 e 1 0 ]
+{
+"12
+[v seven_segment_intailize@ret ret `uc  1 a 1 11 ]
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"10
+[s S32 . 5 `[4]S24 1 segment_pins 4 0 `E2874 1 segment_type 1 4 ]
+[v seven_segment_intailize@segment segment `*.30CS32  1 p 1 10 ]
+"27
+} 0
+"16 E:\projects\Electronic rosary\ECU_layer/BUTTOM/ecu_button.c
+[v _button_initialize button_initialize `(uc  1 e 1 0 ]
+{
+"17
+[v button_initialize@ret ret `uc  1 a 1 8 ]
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"16
+[s S72 . 3 `S24 1 BUTTON_PIN 1 0 `E2874 1 BUTTON_STATUS 1 1 `E2878 1 BUTTON_ACTIVE 1 2 ]
+[v button_initialize@btn btn `*.30CS72  1 p 1 7 ]
+"28
+} 0
+"15 E:\projects\Electronic rosary\ECU_layer/LED/ecu_led.c
+[v _LED_intailize LED_intailize `(uc  1 e 1 0 ]
+{
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"22
+[v LED_intailize@pin_obj pin_obj `S24  1 a 1 13 ]
+"16
+[v LED_intailize@ret ret `uc  1 a 1 12 ]
+[s S112 . 1 `uc 1 PORT_NAME 1 0 :4:0 
+`uc 1 PIN 1 0 :3:4 
+`uc 1 LED_ST 1 0 :1:7 
+]
+"15
+[v LED_intailize@led led `*.30CS112  1 p 1 10 ]
+"21
+[v LED_intailize@F2894 F2894 `S24  1 s 1 F2894 ]
+"32
+} 0
+"133 E:\projects\Electronic rosary\MCAL_Layer/GPIO/HAL_gpio.c
+[v _gpio_pin_intailize gpio_pin_intailize `(uc  1 e 1 0 ]
+{
+"134
+[v gpio_pin_intailize@ret ret `uc  1 a 1 9 ]
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"133
+[v gpio_pin_intailize@pin_config pin_config `*.30CS24  1 p 1 8 ]
+"142
+} 0
+"22
+[v _gpio_pin_direction_intailize gpio_pin_direction_intailize `(uc  1 e 1 0 ]
+{
+"23
+[v gpio_pin_direction_intailize@ret ret `uc  1 a 1 6 ]
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"22
+[v gpio_pin_direction_intailize@pin_config pin_config `*.30CS24  1 p 1 0 ]
+"41
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 11 ]
+"7
+[v ___lwmod@dividend dividend `ui  1 p 2 7 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 9 ]
+"25
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
+"41 E:\projects\Electronic rosary\ECU_layer/LED/ecu_led.c
+[v _LED_TURN_ON LED_TURN_ON `(uc  1 e 1 0 ]
+{
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"48
+[v LED_TURN_ON@pin_obj pin_obj `S24  1 a 1 11 ]
+"42
+[v LED_TURN_ON@ret ret `uc  1 a 1 10 ]
+[s S112 . 1 `uc 1 PORT_NAME 1 0 :4:0 
+`uc 1 PIN 1 0 :3:4 
+`uc 1 LED_ST 1 0 :1:7 
+]
+"41
+[v LED_TURN_ON@led led `*.30CS112  1 p 1 8 ]
+"47
+[v LED_TURN_ON@F2899 F2899 `S24  1 s 1 F2899 ]
+"57
+} 0
+"66
+[v _LED_TURN_OFF LED_TURN_OFF `(uc  1 e 1 0 ]
+{
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"73
+[v LED_TURN_OFF@pin_obj pin_obj `S24  1 a 1 11 ]
+"67
+[v LED_TURN_OFF@ret ret `uc  1 a 1 10 ]
+[s S112 . 1 `uc 1 PORT_NAME 1 0 :4:0 
+`uc 1 PIN 1 0 :3:4 
+`uc 1 LED_ST 1 0 :1:7 
+]
+"66
+[v LED_TURN_OFF@led led `*.30CS112  1 p 1 8 ]
+"72
+[v LED_TURN_OFF@F2904 F2904 `S24  1 s 1 F2904 ]
+"82
+} 0
+"69 E:\projects\Electronic rosary\MCAL_Layer/GPIO/HAL_gpio.c
+[v _gpio_pin_write_logic gpio_pin_write_logic `(uc  1 e 1 0 ]
+{
+"70
+[v gpio_pin_write_logic@ret ret `uc  1 a 1 7 ]
+[s S24 . 1 `uc 1 port 1 0 :3:0 
+`uc 1 pin 1 0 :3:3 
+`uc 1 direction 1 0 :1:6 
+`uc 1 logic 1 0 :1:7 
+]
+"69
+[v gpio_pin_write_logic@pin_config pin_config `*.30CS24  1 p 1 0 ]
+[v gpio_pin_write_logic@logic logic `E2814  1 p 1 1 ]
+"89
+} 0
