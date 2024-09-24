@@ -14,7 +14,6 @@
 #include "ECU_layer/7_segment/ecu_seven_segment.h"
 
 /****** Macro declarations section           ******/
-#define _XTAL_FREQ 8000000 
 
 
 /****** Macro functions declarations section ******/

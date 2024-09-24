@@ -10,6 +10,7 @@
 
 /****** Includes section                     ******/
 /****** Macro declarations section           ******/
+#define _XTAL_FREQ 4000000 
 /****** Macro functions declarations section ******/
 /****** Data types section                   ******/
 /****** functions section                    ******/
